@@ -1,1 +1,1 @@
-This Directory is for task Introducing Python Programming at ALX
+This directory contains all alx into to python hello world tasks
