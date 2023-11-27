@@ -66,4 +66,4 @@ class Rectangle:
         """
         returns the string representation of a rectangle to create a new instance
         """
-        return (f"Rectangle{:d}, {:d}".format(self.__width, self.__height))
+        return (f"Rectangle({:d}, {:d})".format(self.__width, self.__height))
