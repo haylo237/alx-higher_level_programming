@@ -1,8 +1,7 @@
 #!/usr/bin/node
-
 class Rectangle {
   constructor (w, h) {
-    if ((w <= 0) || (h <= 0)) {
+    if ((w > 0) && (h > 0)) {
       this.width = w;
       this.height = h;
     }
@@ -16,6 +15,17 @@ class Rectangle {
       }
       console.log(s);
     }
+  }
+
+  rotate () {
+    const  aux = this.width;
+    this.width = this.height;
+    this.height = aux;
+  }
+
+  double () {
+    this.width *= 2;
+    this.width *= 2;
   }
 }
 module.exports = Rectangle;
