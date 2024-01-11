@@ -2,8 +2,8 @@
 class Rectanlge {
   contructor (w, h) {
     if (w <= 0 || h <= 0 ) {
-      this.width = "w";
-      this.heigth = "h";
+      this.width = w;
+      this.heigth = h;
     }
   }
 }
