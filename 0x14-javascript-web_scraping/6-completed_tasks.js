@@ -21,10 +21,8 @@ request.get(apiUrl, { json: true }, (err, res, body) => {
       }
     });
 
-    Object.keys(completedTasks).forEach(userId => {
-      console.log(`User ID: ${userId} has completed ${completedTasks[userId]} tasks`);
-    });
+    console.log(JSON.stringify(completedTasks, null, 2));
   } else {
-    console.log(`Failed to retrieve todos`);
+    console.log('Failed to retrieve todos');
   }
 });
