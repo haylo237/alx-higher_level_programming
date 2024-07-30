@@ -21,8 +21,13 @@ request.get(apiUrl, { json: true }, (err, res, body) => {
       }
     });
 
-    console.log(JSON.stringify(completedTasks, null, 2));
+    // Convert the result to a JSON string and replace double quotes with single quotes
+    const jsonString = JSON.stringify(completedTasks, null, 2);
+    const singleQuoteJsonString = jsonString.replace(/\"/g, "'");
+
+    console.log(singleQuoteJsonString);
   } else {
     console.log('Failed to retrieve todos');
   }
 });
+
